@@ -32,8 +32,8 @@ This project demonstrates a simple microservices architecture using Flask, Docke
 ### 2️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/Sayantan2k24/02-Containerized-Microservices-Architecture.git
-cd 02-Containerized-Microservices-Architecture
+git clone https://github.com/KabraJiii/02-containerized-microservices-architecture.git
+cd 02-containerized-microservices-architecture
 ````
 
 ### 3️⃣ Run All Services
@@ -54,8 +54,8 @@ docker-compose up --build
 
 ```json
 {
-  "name": "Alice",
-  "email": "alice@example.com"
+  "name": "bob",
+  "email": "bob@example.com"
 }
 ```
 
@@ -64,7 +64,7 @@ docker-compose up --build
 ```bash
 curl -X POST http://localhost:5000/register \
   -H "Content-Type: application/json" \
-  -d '{"name":"Alice", "email":"alice@example.com"}'
+  -d '{"name":"bob", "email":"bob@example.com"}'
 ```
 
 ---
@@ -73,14 +73,14 @@ curl -X POST http://localhost:5000/register \
 
 * **Endpoint**: `GET /user/<name>`
 
-* **URL**: `http://localhost:5001/user/Alice`
+* **URL**: `http://localhost:5001/user/bob`
 
 * **Behavior**: Returns cached user info if available; else sets it in Redis.
 
 * **Sample `curl` command**:
 
 ```bash
-curl http://localhost:5001/user/Alice
+curl http://localhost:5001/user/bob
 ```
 
 ---
